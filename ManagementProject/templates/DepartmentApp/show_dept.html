@@ -6,7 +6,7 @@
     <ul class="navbar-nav ml-auto ">
         <form method="post" class="form-inline" style="margin-right:auto">
             {% csrf_token %}
-            <input class="form-control mr-sm-2" type="search" name="searchdata" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" name="searchdata" placeholder="Search" aria-label="Search" required>
             <button class="btn btn-success " type="submit">Department</button>
         </form>
     </ul>
