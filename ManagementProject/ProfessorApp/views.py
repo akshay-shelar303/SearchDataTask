@@ -26,7 +26,7 @@ def update_professor(request,i):
     professor = Professor.objects.get(id=i)
     form = ProfessorForm(instance=professor)
     if request.method == 'POST':
-        form = ProfessorForm(request.POST,instance=department)
+        form = ProfessorForm(request.POST,instance=professor)
         if form.is_valid():
             form.save()
             return redirect("show_professor")
